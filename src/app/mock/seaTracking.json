@@ -1,0 +1,240 @@
+{
+  "request_id": "dc7038ca-2c45-4728-8be7-d7a6c0b5349a",
+  "scac_code": "HLCU",
+  "tracking_id": "SGN240405528",
+  "tracking_type": "bill_of_lading",
+  "created_at": "2024-05-08T01:36:25.419Z",
+  "booking_number": [],
+  "completed": true,
+  "container_details": [
+    {
+      "events": [
+        {
+          "date": {
+            "$date": 1712275200000
+          },
+          "date_iso": {
+            "date": "2024-04-05T00:00:00.000Z"
+          },
+          "event_elapsed": true,
+          "received_date": {
+            "$date": 1712275200000
+          },
+          "location": {
+            "unloc_code": "VNHPH",
+            "city": "Haiphong",
+            "country": "VN"
+          },
+          "carrier_event_code": "LOAD",
+          "shipthis_event_code": "S120",
+          "event_description": "Shipment Loaded at port of loading"
+        },
+        {
+          "date": {
+            "$date": 1712275200000
+          },
+          "date_iso": {
+            "date": "2024-04-05T00:00:00.000Z"
+          },
+          "event_elapsed": true,
+          "received_date": {
+            "$date": 1712275200000
+          },
+          "location": {
+            "unloc_code": "VNHPH",
+            "city": "Haiphong",
+            "country": "VN"
+          },
+          "carrier_event_code": "DEP",
+          "shipthis_event_code": "S130",
+          "event_description": "Shipment departed from port of loading"
+        },
+        {
+          "date": {
+            "$date": 1714089600000
+          },
+          "date_iso": {
+            "date": "2024-04-26T00:00:00.000Z"
+          },
+          "event_elapsed": true,
+          "received_date": {
+            "$date": 1714089600000
+          },
+          "location": {
+            "unloc_code": "MXBHL",
+            "city": "Angeles",
+            "country": "MX"
+          },
+          "carrier_event_code": "FARR",
+          "shipthis_event_code": "S180",
+          "event_description": "Shipment arrived at port of discharge"
+        },
+        {
+          "date": {
+            "$date": 1714262400000
+          },
+          "date_iso": {
+            "date": "2024-04-28T00:00:00.000Z"
+          },
+          "event_elapsed": true,
+          "received_date": {
+            "$date": 1714262400000
+          },
+          "location": {
+            "unloc_code": "MXBHL",
+            "city": "Angeles",
+            "country": "MX"
+          },
+          "carrier_event_code": "DIS",
+          "shipthis_event_code": "S190",
+          "event_description": "Shipment discharged at port of discharge"
+        }
+      ],
+      "container_number": "FTAU1609780",
+      "seal_nos": []
+    },
+    {
+      "events": [
+        {
+          "date": {
+            "$date": 1712275200000
+          },
+          "date_iso": {
+            "date": "2024-04-05T00:00:00.000Z"
+          },
+          "event_elapsed": true,
+          "received_date": {
+            "$date": 1712275200000
+          },
+          "location": {
+            "unloc_code": "VNHPH",
+            "city": "Haiphong",
+            "country": "VN"
+          },
+          "carrier_event_code": "DEP",
+          "shipthis_event_code": "S130",
+          "event_description": "Shipment departed from port of loading"
+        },
+        {
+          "date": {
+            "$date": 1714089600000
+          },
+          "date_iso": {
+            "date": "2024-04-26T00:00:00.000Z"
+          },
+          "event_elapsed": true,
+          "received_date": {
+            "$date": 1714089600000
+          },
+          "location": {
+            "unloc_code": "MXBHL",
+            "city": "Angeles",
+            "country": "MX"
+          },
+          "carrier_event_code": "FARR",
+          "shipthis_event_code": "S180",
+          "event_description": "Shipment arrived at port of discharge"
+        },
+        {
+          "date": {
+            "$date": 1714262400000
+          },
+          "date_iso": {
+            "date": "2024-04-28T00:00:00.000Z"
+          },
+          "event_elapsed": true,
+          "received_date": {
+            "$date": 1714262400000
+          },
+          "location": {
+            "unloc_code": "MXBHL",
+            "city": "Angeles",
+            "country": "MX"
+          },
+          "carrier_event_code": "DIS",
+          "shipthis_event_code": "S190",
+          "event_description": "Shipment discharged at port of discharge"
+        }
+      ],
+      "container_number": "FTAU1609789",
+      "seal_nos": []
+    }
+  ],
+  "intermediary_ports": [],
+  "raw_data": [],
+  "pol_unloc_code": "VNHPH",
+  "pod_unloc_code": "MXBHL",
+  "pol_etd": {
+    "$date": 1712275200000
+  },
+  "pol_etd_iso": {
+    "date": "2024-04-05T00:00:00.000Z"
+  },
+  "pod_eta": {
+    "$date": 1714262400000
+  },
+  "pod_eta_iso": {
+    "date": "2024-04-28T00:00:00.000Z"
+  },
+  "origin_unloc_code": "VNHPH",
+  "fnd_unloc_code": "MXBHL",
+  "last_container_event": {
+    "date": {
+      "$date": 1714262400000
+    },
+    "date_iso": {
+      "date": "2024-04-28T00:00:00.000Z"
+    },
+    "event_elapsed": true,
+    "received_date": {
+      "$date": 1714262400000
+    },
+    "location": {
+      "unloc_code": "MXBHL",
+      "city": "Angeles",
+      "country": "MX"
+    },
+    "carrier_event_code": "DIS",
+    "shipthis_event_code": "S190",
+    "event_description": "Shipment discharged at port of discharge"
+  },
+  "latest_container_event": {
+    "date": {
+      "$date": 1714262400000
+    },
+    "date_iso": {
+      "date": "2024-04-28T00:00:00.000Z"
+    },
+    "event_elapsed": true,
+    "received_date": {
+      "$date": 1714262400000
+    },
+    "location": {
+      "unloc_code": "MXBHL",
+      "city": "Angeles",
+      "country": "MX"
+    },
+    "carrier_event_code": "DIS",
+    "shipthis_event_code": "S190",
+    "event_description": "Shipment discharged at port of discharge"
+  },
+  "fnd_eta": null,
+  "fnd_eta_iso": null,
+  "fnd_ata": {
+    "$date": 1714262400000
+  },
+  "fnd_ata_iso": {
+    "date": "2024-04-28T00:00:00.000Z"
+  },
+  "validation_error": {
+    "errors": [
+      {
+        "property": "raw_data",
+        "children": [],
+        "constraints": {
+          "arrayMinSize": "raw_data must contain at least 1 elements"
+        }
+      }
+    ]
+  }
+}

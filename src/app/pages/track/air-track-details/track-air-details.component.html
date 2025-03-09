@@ -1,0 +1,211 @@
+<div class="page-banner">
+  <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-900 to-blue-700 opacity-70"></div>
+  <div class="relative z-10 h-full flex items-center">
+    <div class="container mx-auto px-4 pb-10 mt-20">
+      <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div class="flex items-center gap-4">
+          <button
+            (click)="go_back()"
+            class="flex items-center gap-2 px-4 py-2 bg-white/10 text-white rounded-lg hover:bg-white/20 transition-all duration-300 backdrop-blur-sm"
+          >
+            <i class="fas fa-arrow-left text-sm"></i>
+            <span class="text-sm">Back</span>
+          </button>
+          <div>
+            <h1 class="text-xl font-medium text-white">Air Shipment Tracking</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="min-h-screen bg-gray-50 relative z-10">
+  <div class="tracking-details container mx-auto px-4 max-w-5xl py-6">
+    @if (tracking_data) {
+    <div class="tracking-card transform -translate-y-14">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <div>
+          <h2 class="text-sm font-medium text-gray-600 mb-1">AWB Number</h2>
+          <p class="text-xl font-bold text-blue-600 tracking-wide">
+            {{ tracking_data.awb.prefix }}-{{ tracking_data.awb.number }}
+          </p>
+        </div>
+        @if(tracking_data.completed){
+        <div class="mt-4 md:mt-0">
+          <span class="status-badge status-completed">
+            <i class="fas fa-check-circle mr-1.5 text-sm"></i>
+            Shipment completed
+          </span>
+        </div>
+        }
+      </div>
+    </div>
+    }
+
+    <!-- Latest Event -->
+    @if(tracking_data.latest_event){
+    <div class="tracking-card mb-6" *ngIf="tracking_data">
+      <h3 class="text-sm font-medium text-gray-600 mb-4">Latest Update</h3>
+      <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-lg border border-blue-200">
+        <div class="flex items-start gap-3">
+          <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-full p-2 shadow-lg">
+            <i class="fas fa-check-circle text-white text-sm"></i>
+          </div>
+          <div>
+            <p class="font-medium text-blue-800 text-sm">
+              {{ tracking_data.latest_event.carrier_event_description }}
+            </p>
+            <div class="flex items-center gap-2 mt-2">
+              <p class="text-xs text-gray-500 font-medium">
+                Event Code: {{ tracking_data.latest_event.carrier_event_code }}
+              </p>
+              @if(tracking_data?.latest_event?.location){
+              <p class="text-xs text-gray-500 font-medium items-center">
+                <i class="fas fa-location-dot mr-1.5"></i>
+                Event Location:
+                {{ tracking_data?.latest_event?.location }}
+              </p>
+              } @if(tracking_data?.latest_event?.date_iso?.date){
+              <p class="text-xs text-gray-500">
+                <i class="fas fa-calendar-alt mr-1.5"></i>
+                Event Date:
+                {{ tracking_data?.latest_event?.date_iso?.date | date : 'MMM d, y HH:mm' }}
+              </p>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+    <!-- Route Information -->
+    @if(tracking_data){
+    <div class="tracking-card mb-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex-1 text-center p-4 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 shadow-inner">
+          <div class="text-gray-600 mb-2 text-sm">Port of Loading</div>
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <i class="fas fa-plane-departure text-blue-500 text-lg"></i>
+            <span class="text-lg font-bold">{{ tracking_data.origin_airport_code }}</span>
+          </div>
+          <div class="text-xs text-gray-500">
+            <i class="fas fa-calendar-alt mr-1.5"></i>
+            Departure Date {{ tracking_data.pol_etd_iso?.date | date : 'MMM d, y HH:mm' }}
+          </div>
+        </div>
+
+        <div class="flex-1 flex justify-center py-6 relative">
+          <div class="w-32 h-0.5 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-400">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <i class="fas fa-plane text-blue-500 text-base"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-1 text-center p-4 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 shadow-inner">
+          <div class="text-gray-600 mb-2 text-sm">Port of Discharge</div>
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <i class="fas fa-plane-arrival text-blue-500 text-lg"></i>
+            <span class="text-lg font-bold">{{ tracking_data.destination_airport_code }}</span>
+          </div>
+          <div class="text-xs text-gray-500">
+            <i class="fas fa-calendar-alt mr-1.5"></i>
+            Arrival Date: {{ tracking_data.pod_eta_iso?.date | date : 'MMM d, y HH:mm' }}
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+
+    <!-- Timeline -->
+    @if(tracking_data){
+    <div class="tracking-card">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-sm font-medium text-gray-600">Shipment Event</h3>
+        <div class="tab-switcher">
+          <div class="tab-switcher-item" [class.active]="is_table_view" (click)="is_table_view = true">
+            <i class="fas fa-table-cells text-xs"></i>
+          </div>
+          <div class="tab-switcher-item" [class.active]="!is_table_view" (click)="is_table_view = false">
+            <i class="fas fa-list-ul text-xs"></i>
+          </div>
+        </div>
+      </div>
+      @if(is_table_view){
+      <ng-container *ngTemplateOutlet="table_view"></ng-container>
+      }@else {
+      <ng-container *ngTemplateOutlet="timeline_view"></ng-container>
+      }
+    </div>
+    }
+  </div>
+</div>
+
+<ng-template #timeline_view>
+  <div class="overflow-auto max-h-[600px]" @fadeInStagger>
+    <div class="relative pl-6 mt-6">
+      <div class="timeline-line"></div>
+      @for(event of sorted_events; track event){
+      <div class="timeline-item mb-8 relative">
+        <div class="timeline-dot flex items-center justify-center">
+          <i class="fa text-blue-500 text-[10px]" [ngClass]="event.carrier_event_code | status_to_icon : 'air'"></i>
+        </div>
+        <div class="ml-6 bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+            <div class="text-sm font-medium text-gray-800">
+              {{ event.carrier_event_description }}
+            </div>
+            <div class="text-xs text-gray-500 bg-white px-3 py-1 rounded-full shadow-inner">
+              {{ event.date_iso?.date | date : 'MMM d, y HH:mm' }}
+            </div>
+          </div>
+          <div *ngIf="event.pieces || event.weight" class="mt-2 flex items-center text-gray-600 text-xs space-x-2">
+            <ng-container *ngIf="event.pieces">
+              <div class="flex items-center">
+                <i class="fa-solid fa-box mr-1"></i>
+                <span>Pieces: {{ event.pieces }}</span>
+              </div>
+            </ng-container>
+            <ng-container *ngIf="event.weight">
+              <div class="flex items-center">
+                <i class="fa-solid fa-weight-hanging mr-1"></i>
+                <span>Weight: {{ event.weight }} {{ event.weightUnit }}</span>
+              </div>
+            </ng-container>
+          </div>
+          <div *ngIf="event.flight_no" class="mt-2 flex items-center text-gray-600 text-xs space-x-2">
+            <i class="fas fa-plane-departure text-blue-500 text-lg"></i>
+            <span>Flight: {{ event.flight_no }}</span>
+          </div>
+          <div class="mt-2 flex items-center text-gray-600 text-xs">
+            <i class="fas fa-location-dot mr-1.5 text-blue-500"></i>
+            {{ event.location }}
+          </div>
+          <div class="mt-1.5 text-xs font-medium text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full inline-block">
+            {{ event.carrier_event_code }}
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #table_view>
+  <app-table-data [table_columns]="air_table_headers" [table_data]="tracking_data.events"></app-table-data>
+</ng-template>
+
+<ng-template #locationTemplate let-data="data">
+  <div class="flex items-center text-gray-600 text-sm">
+    <i class="fas fa-location-dot mr-1.5 text-blue-500"></i>
+    {{ data.location }}
+  </div>
+</ng-template>
+
+<ng-template #eventTemplate let-data="data">
+  <div class="flex items-center">
+    <i class="fa text-blue-500 text-sm" [ngClass]="data.carrier_event_code | status_to_icon : 'air'"></i>
+    <span class="ml-2 font-medium text-gray-800">{{ data.carrier_event_code }}</span>
+  </div>
+</ng-template>

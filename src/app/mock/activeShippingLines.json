@@ -1,0 +1,224 @@
+{
+  "warnings": [],
+  "error": null,
+  "success": true,
+  "data": [
+    {
+      "carrierName": "Maersk Line",
+      "carrierCode": "MRSK",
+      "scacCodes": ["MAEU", "MSKU", "SEAU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "ZIM Integrated Shipping Services Ltd",
+      "carrierCode": "ZIM",
+      "scacCodes": ["ZIMU"],
+      "isPrefixRequired": "yes",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "Compagnie Maritime d Affretement Compagnie Generale Maritime (CMA-CGM)",
+      "carrierCode": "CMACGM",
+      "scacCodes": ["CMDU", "CMDA", "CACM", "CMAU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "Mediterranean Shipping Company",
+      "carrierCode": "MSC",
+      "scacCodes": ["MEDU", "MSDU", "MSMU", "MSCU"],
+      "isPrefixRequired": "yes",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "Yang Ming Line",
+      "carrierCode": "YML",
+      "scacCodes": ["YMLU", "YMPR", "YMJA"],
+      "isPrefixRequired": "maybe",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "Wan Hai Lines",
+      "carrierCode": "WHL",
+      "scacCodes": ["22AA", "WHLC", "WHLU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "T. S. Lines",
+      "carrierCode": "TSL",
+      "scacCodes": ["TSTU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "SM Line",
+      "carrierCode": "SML",
+      "scacCodes": ["SMLM", "SMCU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "Ocean Network Express",
+      "carrierCode": "ONE",
+      "scacCodes": ["ONEY"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "SITC Container Lines Co., LTD",
+      "carrierCode": "SITC",
+      "scacCodes": ["12PD"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": true
+    },
+    {
+      "carrierName": "Pacific International Lines",
+      "carrierCode": "PIL",
+      "scacCodes": ["PCIU", "MEPE"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "Orient Overseas Container Line Ltd.",
+      "carrierCode": "OOCL",
+      "scacCodes": ["OOCU", "OOLU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": true
+    },
+    {
+      "carrierName": "Matson",
+      "carrierCode": "MATS",
+      "scacCodes": ["MATS"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": true
+    },
+    {
+      "carrierName": "Korea Marine Transport",
+      "carrierCode": "KMTC",
+      "scacCodes": ["KMTC", "KMTU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": true
+    },
+    {
+      "carrierName": "Interasia Lines",
+      "carrierCode": "INTA",
+      "scacCodes": ["12AT"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "Hyundai Merchant Marine Co., Ltd.",
+      "carrierCode": "HYNDI",
+      "scacCodes": ["HDMU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "Hamburg Sud",
+      "carrierCode": "HMBRG",
+      "scacCodes": ["SUDU"],
+      "isPrefixRequired": "maybe",
+      "liveStatus": "in development",
+      "alert": false
+    },
+    {
+      "carrierName": "Gold Star Line Ltd.",
+      "carrierCode": "GLDS",
+      "scacCodes": ["GSLU", "GOSU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": true
+    },
+    {
+      "carrierName": "Evergreen Line",
+      "carrierCode": "EVRG",
+      "scacCodes": ["EGLV"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "ECU Worldwide",
+      "carrierCode": "ECU",
+      "scacCodes": ["ECUW", "ECUI"],
+      "isPrefixRequired": "maybe",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "COSCO Container Lines",
+      "carrierCode": "COSCO",
+      "scacCodes": ["COSU", "COAU", "COEU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "Hapag Lloyd Container Line",
+      "carrierCode": "HPGLYD",
+      "scacCodes": ["HLCU"],
+      "isPrefixRequired": "yes",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "Westwood Shipping Lines",
+      "carrierCode": "WWE",
+      "scacCodes": ["WWSU"],
+      "isPrefixRequired": "maybe",
+      "liveStatus": "in development",
+      "alert": false
+    },
+    {
+      "carrierName": "Test Sea Shipping",
+      "carrierCode": "TES",
+      "scacCodes": ["TEST"],
+      "isPrefixRequired": "maybe",
+      "liveStatus": "in development",
+      "alert": false
+    },
+    {
+      "carrierName": "Emirates shipping lines",
+      "carrierCode": "ESPU",
+      "scacCodes": ["ESPU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "The Shipping Corporation of India",
+      "carrierCode": "SCI",
+      "scacCodes": ["SCIU"],
+      "isPrefixRequired": "yes",
+      "liveStatus": "active",
+      "alert": false
+    },
+    {
+      "carrierName": "Turkon Line",
+      "carrierCode": "TRKU",
+      "scacCodes": ["TRKU"],
+      "isPrefixRequired": "no",
+      "liveStatus": "active",
+      "alert": false
+    }
+  ],
+  "dataDescription": "All active shipping lines"
+}

@@ -1,0 +1,320 @@
+{
+  "request_id": "193d90de-9c20-4734-bcf2-a848c064bae0",
+  "awb": {
+    "prefix": "176",
+    "number": "76286803",
+    "serial_no": "7628680",
+    "check_digit": "3"
+  },
+  "tracking_id": "17676286803",
+  "created_at": {
+    "$date": "2024-12-08T02:15:29.642Z"
+  },
+  "events": [
+    {
+      "date": {
+        "$date": 1728552220000
+      },
+      "date_iso": {
+        "date": "2024-10-10T09:23:40.000Z"
+      },
+      "carrier_event_code": "BKD",
+      "carrier_event_description": "Booked on Flight EK-0776, 11 Oct 2024, DUR-DXB",
+      "shipthis_event_code": "A010",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "DXB",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728626847000
+      },
+      "date_iso": {
+        "date": "2024-10-11T06:07:27.000Z"
+      },
+      "carrier_event_code": "BKD",
+      "carrier_event_description": "Booked on Flight EK-0729, 13 Oct 2024, DXB-EBB",
+      "shipthis_event_code": "A010",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "DUR",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728626850000
+      },
+      "date_iso": {
+        "date": "2024-10-11T06:07:30.000Z"
+      },
+      "carrier_event_code": "RCS",
+      "carrier_event_description": "Ready for Carriage at DUR",
+      "shipthis_event_code": "A030",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "DUR",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728632940000
+      },
+      "date_iso": {
+        "date": "2024-10-11T07:49:00.000Z"
+      },
+      "carrier_event_code": "MAN",
+      "carrier_event_description": "Manifested on Flight EK-0776, 11 Oct 2024, DUR-DXB",
+      "shipthis_event_code": "A050",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "DUR",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728649680000
+      },
+      "date_iso": {
+        "date": "2024-10-11T12:28:00.000Z"
+      },
+      "carrier_event_code": "DEP",
+      "carrier_event_description": "Departed to DXB on Flight EK-0776, 11 Oct 2024, DUR-DXB",
+      "shipthis_event_code": "A060",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "DUR",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728679320000
+      },
+      "date_iso": {
+        "date": "2024-10-11T20:42:00.000Z"
+      },
+      "carrier_event_code": "ARR",
+      "carrier_event_description": "Arrived at DXB on Flight EK-0776, 12 Oct 2024, DUR-DXB",
+      "shipthis_event_code": "A070",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "DXB",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728684077000
+      },
+      "date_iso": {
+        "date": "2024-10-11T22:01:17.000Z"
+      },
+      "carrier_event_code": "RCF",
+      "carrier_event_description": "Received at DXB from Flight No. EK-0776, 12 Oct 2024, DUR-DXB",
+      "shipthis_event_code": "A100",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "DXB",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728776040000
+      },
+      "date_iso": {
+        "date": "2024-10-12T23:34:00.000Z"
+      },
+      "carrier_event_code": "MAN",
+      "carrier_event_description": "Manifested on Flight EK-0729, 13 Oct 2024, DXB-EBB",
+      "shipthis_event_code": "A050",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "DXB",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728785400000
+      },
+      "date_iso": {
+        "date": "2024-10-13T02:10:00.000Z"
+      },
+      "carrier_event_code": "DEP",
+      "carrier_event_description": "Departed to EBB on Flight EK-0729, 13 Oct 2024, DXB-EBB",
+      "shipthis_event_code": "A060",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "DXB",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728804302000
+      },
+      "date_iso": {
+        "date": "2024-10-13T07:25:02.000Z"
+      },
+      "carrier_event_code": "ARR",
+      "carrier_event_description": "Arrived at EBB on Flight EK-0729, 13 Oct 2024, DXB-EBB",
+      "shipthis_event_code": "A070",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "EBB",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728807060000
+      },
+      "date_iso": {
+        "date": "2024-10-13T08:11:00.000Z"
+      },
+      "carrier_event_code": "RCF",
+      "carrier_event_description": "Received at EBB from Flight No. EK-0729, 13 Oct 2024, DXB-EBB",
+      "shipthis_event_code": "A100",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "EBB",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728807420000
+      },
+      "date_iso": {
+        "date": "2024-10-13T08:17:00.000Z"
+      },
+      "carrier_event_code": "NFD",
+      "carrier_event_description": "Agent has been Notified of arrival of Shipment at EBB ",
+      "shipthis_event_code": "A110",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "EBB",
+      "elapsed": true
+    },
+    {
+      "date": {
+        "$date": 1728807420000
+      },
+      "date_iso": {
+        "date": "2024-10-13T08:17:00.000Z"
+      },
+      "carrier_event_code": "NFD",
+      "carrier_event_description": "Agent has been Notified of arrival of Shipment at EBB ",
+      "shipthis_event_code": "A110",
+      "weight": 653,
+      "weight_unit": "kg",
+      "flight_no": null,
+      "pieces": {
+        "$numberDouble": "NaN"
+      },
+      "location": "EBB",
+      "elapsed": true
+    }
+  ],
+  "intermediary_airports": [
+    {
+      "airport_code": "DXB",
+      "departure_date": {
+        "$date": 1728799800000
+      },
+      "departure_date_iso": {
+        "date": "2024-10-13T06:10:00.000Z"
+      },
+      "arrival_date": {
+        "$date": 1728693540000
+      },
+      "arrival_date_iso": {
+        "date": "2024-10-12T00:39:00.000Z"
+      }
+    }
+  ],
+  "raw_data": [],
+  "origin_airport_code": "DUR",
+  "destination_airport_code": "EBB",
+  "pol_etd": {
+    "$date": 1728785400000
+  },
+  "pol_etd_iso": {
+    "date": "2024-10-13T02:10:00.000Z"
+  },
+  "latest_event": {
+    "date": {
+      "$date": 1728807420000
+    },
+    "date_iso": {
+      "date": "2024-10-13T08:17:00.000Z"
+    },
+    "carrier_event_code": "NFD",
+    "carrier_event_description": "Agent has been Notified of arrival of Shipment at EBB ",
+    "shipthis_event_code": "A110",
+    "weight": 653,
+    "weight_unit": "kg",
+    "flight_no": null,
+    "pieces": {
+      "$numberDouble": "NaN"
+    },
+    "location": "EBB",
+    "elapsed": true
+  },
+  "completed": false,
+  "validation_error": {
+    "errors": [
+      {
+        "property": "pod_eta",
+        "children": [],
+        "constraints": {
+          "isNotEmpty": "pod_eta should not be empty",
+          "isCustomDate": "pod_eta is not a valid CustomDate"
+        }
+      }
+    ]
+  }
+}

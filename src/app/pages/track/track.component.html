@@ -1,0 +1,81 @@
+<div class="relative h-[500px] overflow-hidden">
+  <div
+    class="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+    [style.background-image]="
+      active_tab === 'sea'
+        ? 'url(https://images.unsplash.com/photo-1585713181935-d5f622cc2415?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)'
+        : 'url(https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)'
+    "
+  >
+    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-900/60 to-blue-600/40"></div>
+  </div>
+
+  <div class="absolute top-0 left-0 w-full h-full">
+    <div class="container mx-auto px-4 h-full flex items-center relative">
+      <div class="max-w-2xl" fadeSlide>
+        <h1 class="text-5xl font-bold text-white mb-6 tracking-tight">
+          {{ active_tab === 'sea' ? 'Sea Freight Tracking' : 'Air Freight Tracking' }}
+        </h1>
+        <p class="text-xl text-white/90 mb-8">
+          {{
+            active_tab === 'sea'
+              ? "Track your maritime shipments across the world's oceans"
+              : 'Monitor your air cargo across global flight routes'
+          }}
+        </p>
+        <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 animate-pulse w-max">
+          <span class="text-white">
+            <i class="fas {{ active_tab === 'sea' ? 'fa-ship' : 'fa-plane' }} mr-2"></i>
+            Live Tracking Available
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="max-w-4xl mx-auto px-4 -mt-16 relative z-10">
+  <div class="bg-white rounded-xl shadow-xl p-8 mb-8">
+    <div class="mb-8">
+      <div class="relative">
+        <div class="flex bg-gray-100 p-1 rounded-lg relative">
+          <button [class]="active_tab === 'sea' ? 'tab tab-active' : 'tab'" (click)="setActiveTab('sea')">
+            <i class="fas fa-ship mr-2"></i>
+            Sea Tracking
+          </button>
+          <button [class]="active_tab === 'air' ? 'tab tab-active' : 'tab'" (click)="setActiveTab('air')">
+            <i class="fas fa-plane mr-2"></i>
+            Air Tracking
+          </button>
+          <div
+            class="absolute top-1 left-1 w-[calc(50%-8px)] h-[calc(100%-8px)] bg-white rounded-md shadow-sm transition-transform duration-300"
+            [@tabIndicator]="active_tab"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6 mb-12">
+    <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+      <div class="text-blue-600 mb-4">
+        <i class="fas fa-clock text-2xl"></i>
+      </div>
+      <h3 class="text-lg font-semibold mb-2">Real-Time Updates</h3>
+      <p class="text-gray-600">Track your shipments with live status updates and notifications</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+      <div class="text-blue-600 mb-4">
+        <i class="fas fa-globe text-2xl"></i>
+      </div>
+      <h3 class="text-lg font-semibold mb-2">Global Coverage</h3>
+      <p class="text-gray-600">Track shipments worldwide with our extensive network</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+      <div class="text-blue-600 mb-4">
+        <i class="fas fa-headset text-2xl"></i>
+      </div>
+      <h3 class="text-lg font-semibold mb-2">24/7 Support</h3>
+      <p class="text-gray-600">Our support team is always ready to help you</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply antialiased;
+}
+
+.container {
+  @apply max-w-7xl mx-auto;
+}
+
+@layer base {
+  button:disabled {
+    @apply cursor-not-allowed;
+  }
+}
+.gradient-border {
+  --borderWidth: 0.2rem;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -10;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.input-field {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg 
+       focus:outline-none focus:ring-2 focus:ring-blue-500 
+       focus:border-transparent transition-all duration-200;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 
+       transition-all duration-200 font-medium text-center 
+       transform hover:scale-105 hover:shadow-lg;
+}
+
+.tab-switcher {
+  @apply flex rounded-lg overflow-hidden border border-gray-200 bg-gray-50;
+}
+
+.tab-switcher-item {
+  @apply px-4 py-2 text-sm font-medium text-gray-600 cursor-pointer transition-colors duration-200 flex items-center gap-2;
+}
+
+.tab-switcher-item.active {
+  @apply bg-blue-600 text-white;
+}
+
+.tab-switcher-item:hover:not(.active) {
+  @apply bg-gray-100;
+}
+.table-view {
+  @apply max-h-[500px] overflow-auto border border-gray-200 rounded-lg;
+}
+.table-view th {
+  @apply px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider bg-gray-50;
+}
+
+.table-view td {
+  @apply px-4 py-3 text-sm text-gray-700 border-t border-gray-200;
+}

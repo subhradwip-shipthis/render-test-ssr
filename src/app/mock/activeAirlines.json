@@ -1,0 +1,414 @@
+{
+  "warnings": [],
+  "error": null,
+  "success": true,
+  "data": [
+    {
+      "airlineCode": "AC",
+      "airlineName": "Air Canada",
+      "country": "Canada",
+      "liveStatus": "in development",
+      "prefix": "014"
+    },
+    {
+      "airlineCode": "QF",
+      "airlineName": "Qantas Airways Ltd.",
+      "country": "Australia",
+      "liveStatus": "in development",
+      "prefix": "081"
+    },
+    {
+      "airlineCode": "CA",
+      "airlineName": "Air China Cargo",
+      "country": "China",
+      "liveStatus": "in development",
+      "prefix": "999"
+    },
+    {
+      "airlineCode": "AA",
+      "airlineName": "American Airlines Inc.",
+      "country": "United States of America",
+      "liveStatus": "in development",
+      "prefix": "001"
+    },
+    {
+      "airlineCode": "BA",
+      "airlineName": "British Airways",
+      "country": "United Kingdom",
+      "liveStatus": "in development",
+      "prefix": "125"
+    },
+    {
+      "airlineCode": "CX",
+      "airlineName": "Cathay Pacific Airways Ltd.",
+      "country": "China",
+      "liveStatus": "in development",
+      "prefix": "160"
+    },
+    {
+      "airlineCode": "CK",
+      "airlineName": "China Cargo Airlines Ltd.",
+      "country": "China",
+      "liveStatus": "in development",
+      "prefix": "112"
+    },
+    {
+      "airlineCode": "BR",
+      "airlineName": "Eva Airways Corporation",
+      "country": "Taiwan",
+      "liveStatus": "in development",
+      "prefix": "695"
+    },
+    {
+      "airlineCode": "SV",
+      "airlineName": "Saudi Arabian Airlines Corporation",
+      "country": "Saudi Arabia",
+      "liveStatus": "in development",
+      "prefix": "065"
+    },
+    {
+      "airlineCode": "QF",
+      "airlineName": "Emirates",
+      "country": "United Arab Emirates",
+      "liveStatus": "active",
+      "prefix": "176"
+    },
+    {
+      "airlineCode": "TK",
+      "airlineName": "Turkish Airlines Inc.",
+      "country": "Turkey",
+      "liveStatus": "active",
+      "prefix": "235"
+    },
+    {
+      "airlineCode": "LH",
+      "airlineName": "Lufthansa Cargo AG",
+      "country": "Germany",
+      "liveStatus": "in development",
+      "prefix": "020"
+    },
+    {
+      "airlineCode": "ET",
+      "airlineName": "Ethiopian Airlines Group dba Ethiopian Airlines",
+      "country": "Ethiopia",
+      "liveStatus": "in development",
+      "prefix": "071"
+    },
+    {
+      "airlineCode": "KL",
+      "airlineName": "KLM",
+      "country": "Netherlands",
+      "liveStatus": "in development",
+      "prefix": "074"
+    },
+    {
+      "airlineCode": "QR",
+      "airlineName": "Qatar Airways (Q.C.S.C.)",
+      "country": "Qatar",
+      "liveStatus": "in development",
+      "prefix": "157"
+    },
+    {
+      "airlineCode": "TP",
+      "airlineName": "TAP Portugal",
+      "country": "Portugal",
+      "liveStatus": "in development",
+      "prefix": "047"
+    },
+    {
+      "airlineCode": "JL",
+      "airlineName": "Japan Airlines Co., Ltd.",
+      "country": "Japan",
+      "liveStatus": "in development",
+      "prefix": "131"
+    },
+    {
+      "airlineCode": "PO",
+      "airlineName": "Polar Air Cargo Worldwide, Inc.",
+      "country": "UNITED STATES OF AMERICA",
+      "liveStatus": "in development",
+      "prefix": "403"
+    },
+    {
+      "airlineCode": "UA",
+      "airlineName": "United Airlines, Inc.",
+      "country": "UNITED STATES OF AMERICA",
+      "liveStatus": "in development",
+      "prefix": "016"
+    },
+    {
+      "airlineCode": "WY",
+      "airlineName": "Oman Air (S.A.O.C)",
+      "country": "Oman",
+      "liveStatus": "in development",
+      "prefix": "910"
+    },
+    {
+      "airlineCode": "QY",
+      "airlineName": "European Air Transport Leipzig",
+      "country": "Germany",
+      "liveStatus": "in development",
+      "prefix": "615"
+    },
+    {
+      "airlineCode": "D0",
+      "airlineName": "DHL Air Ltd.",
+      "country": "United Kingdom",
+      "liveStatus": "in development",
+      "prefix": "936"
+    },
+    {
+      "airlineCode": "QY",
+      "airlineName": "DHL Air Ltd.",
+      "country": "Guatemala",
+      "liveStatus": "in development",
+      "prefix": "947"
+    },
+    {
+      "airlineCode": "CI",
+      "airlineName": "China Airlines Ltd.",
+      "country": "Chinese Taipei",
+      "liveStatus": "in development",
+      "prefix": "297"
+    },
+    {
+      "airlineCode": "EY",
+      "airlineName": "Etihad Airways dba Etihad",
+      "country": "United Arab Emirates",
+      "liveStatus": "active",
+      "prefix": "607"
+    },
+    {
+      "airlineCode": "MH",
+      "airlineName": "Malaysia Airlines Berhad dba Malaysia Airlines",
+      "country": "Malaysia",
+      "liveStatus": "in development",
+      "prefix": "232"
+    },
+    {
+      "airlineCode": "RJ",
+      "airlineName": "Alia - The Royal Jordanian Airlines dba Royal Jordanian",
+      "country": "Jordan",
+      "liveStatus": "in development",
+      "prefix": "512"
+    },
+    {
+      "airlineCode": "NZ",
+      "airlineName": "NZ Air New Zealand",
+      "country": "New Zealand",
+      "liveStatus": "in development",
+      "prefix": "086"
+    },
+    {
+      "airlineCode": "AY",
+      "airlineName": "Finnair Oyj",
+      "country": "Finland",
+      "liveStatus": "in development",
+      "prefix": "105"
+    },
+    {
+      "airlineCode": "CV",
+      "airlineName": "Cargolux Airlines International",
+      "country": "Luxembourg",
+      "liveStatus": "in development",
+      "prefix": "172"
+    },
+    {
+      "airlineCode": "7L",
+      "airlineName": "Silk Way West Airlines",
+      "country": "Azerbaijan",
+      "liveStatus": "in development",
+      "prefix": "501"
+    },
+    {
+      "airlineCode": "UL",
+      "airlineName": "SriLankan Airlines Limited",
+      "country": "Sri lanka",
+      "liveStatus": "in development",
+      "prefix": "603"
+    },
+    {
+      "airlineCode": "KQ",
+      "airlineName": "Kenya Airways plc",
+      "country": "Kenya",
+      "liveStatus": "in development",
+      "prefix": "706"
+    },
+    {
+      "airlineCode": "PR",
+      "airlineName": "Philippine Airlines, Inc.",
+      "country": "Philippines",
+      "liveStatus": "in development",
+      "prefix": "079"
+    },
+    {
+      "airlineCode": "VS",
+      "airlineName": "Virgin Atlantic Airways",
+      "country": "Virgin Atlantic",
+      "liveStatus": "in development",
+      "prefix": "932"
+    },
+    {
+      "airlineCode": "NH",
+      "airlineName": "All Nippon Airways Co., Ltd.",
+      "country": "Japan",
+      "liveStatus": "in development",
+      "prefix": "205"
+    },
+    {
+      "airlineCode": "SQ",
+      "airlineName": "Singapore Airlines Limited",
+      "country": "Singapore",
+      "liveStatus": "in development",
+      "prefix": "618"
+    },
+    {
+      "airlineCode": "SA",
+      "airlineName": "South African Airways",
+      "country": "South Africa",
+      "liveStatus": "in development",
+      "prefix": "083"
+    },
+    {
+      "airlineCode": "8V",
+      "airlineName": "Astral Airlines",
+      "country": "Kenya",
+      "liveStatus": "in development",
+      "prefix": "485"
+    },
+    {
+      "airlineCode": "M3",
+      "airlineName": "LATAM Airlines Group S.A.",
+      "country": "South America",
+      "liveStatus": "in development",
+      "prefix": "549"
+    },
+    {
+      "airlineCode": "UC",
+      "airlineName": "LATAM Airlines Group S.A.",
+      "country": "South America",
+      "liveStatus": "in development",
+      "prefix": "145"
+    },
+    {
+      "airlineCode": "AI",
+      "airlineName": "AIr India",
+      "country": "India",
+      "liveStatus": "in development",
+      "prefix": "098"
+    },
+    {
+      "airlineCode": "5Y",
+      "airlineName": "Atlas Air",
+      "country": "America",
+      "liveStatus": "in development",
+      "prefix": "369"
+    },
+    {
+      "airlineCode": "LY",
+      "airlineName": "El Al Israel Airlines",
+      "country": "Isreal",
+      "liveStatus": "in development",
+      "prefix": "114"
+    },
+    {
+      "airlineCode": "DL",
+      "airlineName": "Delta Airlines",
+      "country": "United States",
+      "liveStatus": "in development",
+      "prefix": "006"
+    },
+    {
+      "airlineCode": "TG",
+      "airlineName": "Thai Airways International Public Company Limited",
+      "country": "Thailand",
+      "liveStatus": "in development",
+      "prefix": "217"
+    },
+    {
+      "airlineCode": "TA",
+      "airlineName": "TACA International Airlines S.A.",
+      "country": "El Salvador",
+      "liveStatus": "in development",
+      "prefix": "202"
+    },
+    {
+      "airlineCode": "6E",
+      "airlineName": "Indigo Air Cargo",
+      "country": "India",
+      "liveStatus": "active",
+      "prefix": "312"
+    },
+    {
+      "airlineCode": "AM",
+      "airlineName": "Aeroméxico Cargo",
+      "country": "Mexico",
+      "liveStatus": "active",
+      "prefix": "139"
+    },
+    {
+      "airlineCode": "5X",
+      "airlineName": "UPS Air Cargo",
+      "country": "USA",
+      "liveStatus": "active",
+      "prefix": "406"
+    },
+    {
+      "airlineCode": "JU",
+      "airlineName": "Joint Stock Company for Air Traffic - Air SERBIA Belgrade",
+      "country": "Serbia",
+      "liveStatus": "in development",
+      "prefix": "115"
+    },
+    {
+      "airlineCode": "GA",
+      "airlineName": "Garuda Indonesia Airlines",
+      "country": "Indonesia",
+      "liveStatus": "in development",
+      "prefix": "126"
+    },
+    {
+      "airlineCode": "D5",
+      "airlineName": "DHL Aero Expresso",
+      "country": "Panama City",
+      "liveStatus": "in development",
+      "prefix": "992"
+    },
+    {
+      "airlineCode": "UX",
+      "airlineName": "Air Europa",
+      "country": "Spain",
+      "liveStatus": "in development",
+      "prefix": "996"
+    },
+    {
+      "airlineCode": "N3",
+      "airlineName": "Vuela El Salvador S.A. de C.V. Dba Volaris El Salvador",
+      "country": "El Salvador",
+      "liveStatus": "in development",
+      "prefix": "370"
+    },
+    {
+      "airlineCode": "M6",
+      "airlineName": "Amerijet International",
+      "country": "USA",
+      "liveStatus": "in development",
+      "prefix": "810"
+    },
+    {
+      "airlineCode": "D7",
+      "airlineName": "Air Asia",
+      "country": "Malaysia",
+      "liveStatus": "in development",
+      "prefix": "843"
+    },
+    {
+      "airlineCode": "Q6",
+      "airlineName": "Vuela El Salvador S.A. de C.V. Dba Volaris El Salvador",
+      "country": "Costa Rica",
+      "liveStatus": "in development",
+      "prefix": "621"
+    }
+  ],
+  "dataDescription": "All active airlines"
+}
