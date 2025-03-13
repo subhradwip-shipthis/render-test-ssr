@@ -1,3 +1,4 @@
+import 'zone.js/node'; // Ensure this is imported for SSR
 import { APP_BASE_HREF } from '@angular/common';
 import { CommonEngine } from '@angular/ssr';
 import express from 'express';
@@ -5,7 +6,6 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import AppServerModule from './src/main.server';
 
-// The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
   const serverDistFolder = dirname(fileURLToPath(import.meta.url));
@@ -17,25 +17,23 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
 
-  // Example Express Rest API endpoints
-  // server.get('/api/**', (req, res) => { });
-  // Serve static files from /browser
-  server.get('**', express.static(browserDistFolder, {
+  // ✅ Health check
+  server.get('/health', (req, res) => res.send('OK'));
+
+  // ✅ Serve static files properly
+  server.use(express.static(browserDistFolder, {
     maxAge: '1y',
-    index: 'index.html',
   }));
 
-  // All regular routes use the Angular engine
-  server.get('**', (req, res, next) => {
-    const { protocol, originalUrl, baseUrl, headers } = req;
-
+  // ✅ SSR for all other routes
+  server.get('*', (req, res, next) => {
     commonEngine
       .render({
         bootstrap: AppServerModule,
         documentFilePath: indexHtml,
-        url: `${protocol}://${headers.host}${originalUrl}`,
+        url: req.originalUrl,
         publicPath: browserDistFolder,
-        providers: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
+        providers: [{ provide: APP_BASE_HREF, useValue: '/' }], // Or baseUrl if needed
       })
       .then((html) => res.send(html))
       .catch((err) => next(err));
